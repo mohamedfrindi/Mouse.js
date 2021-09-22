@@ -72,5 +72,6 @@ let mouse = new Mouse({
   // Accepts 2 options : false / true
   // default option : false
   
-})
+});
+mouse.mouse();
 ````
