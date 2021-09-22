@@ -5,16 +5,6 @@ Mouse.Js is a javascript library, which changes the shape of the mouse into vari
 
 ## Installation
 
-#### CDN
-````html
-<!-- css -->
-<link rel="stylesheet" href="dist/css/mouse.css" />
-<!-- js -->
-<link rel="stylesheet" href="dist/css/mouse-min.css" />
-````
-
-
-
 ##### Put the CSS file to your <code>head</code> tag:
 ````html
 <link rel="stylesheet" href="dist/css/mouse.css" />
@@ -28,6 +18,15 @@ Mouse.Js is a javascript library, which changes the shape of the mouse into vari
 <!-- or -->
 <script type="text/javascript" src="dist/js/mouse-min.js"></script>
 ````
+
+#### CDN
+````html
+<!-- css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/css/mouse.css" />
+<!-- js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/js/mouse.js" />
+````
+
 
 ##### To run Mouse.Js just add the following code in your <code>script</code>:
 ````javascript
