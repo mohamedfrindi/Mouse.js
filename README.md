@@ -24,7 +24,7 @@ Mouse.Js is a javascript library, which changes the shape of the mouse into vari
 <!-- css -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/css/mouse.css" />
 <!-- js -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/js/mouse.js" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/js/mouse.js"></script>
 ````
 
 
