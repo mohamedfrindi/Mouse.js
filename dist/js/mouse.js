@@ -1,7 +1,7 @@
 function Mouse (parametars) {
 
     this.default = {
-        mouse : 'point',
+        mouse : 'cirle',
         color: '#ffda79',
         mouseHover : false,
         mousePointer: false,
