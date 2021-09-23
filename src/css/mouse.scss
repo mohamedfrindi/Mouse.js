@@ -1,0 +1,166 @@
+.mouse.defult{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--bg), 0 0 10px var(--bg);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--bg);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        transition: all .3s ease-in-out;
+    }
+}
+.mouse.defult.mouse-hover{
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 10px var(--bg), 0 0 0px var(--bg);
+    // mix-blend-mode: difference;
+    opacity: .3;
+    transition: width .3s ease-in-out , height .3s ease-in-out;
+
+    &::after{
+        width: 30px;
+        height: 30px;
+        transition: width .3s ease-in-out , height .3s ease-in-out;
+    }
+}
+
+// mouse cirle
+.mouse.cirle{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50%;
+    border: 1px solid var(--bg);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+
+    &::after{
+        content: "";
+        width: 3px;
+        height: 3px;
+        background: var(--bg);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+    }
+}
+.mouse.cirle.mouse-hover{
+    transform-origin: center;
+    opacity: .5;
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: transform  .3s ease-in-out;
+
+    &::after{
+        display: none;
+    }
+}
+
+
+// mouse point
+.mouse.point{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    border-radius: 50%;
+    background: var(--bg);
+    box-shadow: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    // transition: all .2s ease-in-out;
+
+    &::after{
+        display: none;
+    }
+}
+.mouse.point.mouse-hover{
+    opacity: 1;
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(3);
+    transition: transform .3s ease-in-out;
+    mix-blend-mode:difference;
+}
+
+
+// mouse border and background hover
+.mouse-border{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 1px solid var(--bg);
+        animation: scl .3s ease-in-out;
+    }
+}
+.mouse-bg{
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg);
+        filter: opacity(0.2);
+        animation: scl .3s ease-in-out;
+    }
+}
+@keyframes scl{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// cliked
+.mouse-clicked{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--bg);
+    display: block;
+    border-radius: 50%;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    animation: mouseClicked .7s ease-in-out;
+
+    @keyframes mouseClicked{
+        0%{
+            opacity: 1;
+            transform:translate(-50% , -50%) scale(0);
+        }
+        100%{
+            opacity: 0;
+            transform:translate(-50% , -50%) scale(3);
+        }
+    }
+}
