@@ -1,7 +1,7 @@
 {
   "name": "mouse",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mouse.Js is a javascript library, which changes the shape of the mouse into various shapes with beautiful effects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +18,14 @@
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.1.0",
     "node-sass": "^6.0.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedfrindi/Mouse.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohamedfrindi/Mouse.js/issues"
+  },
+  "homepage": "https://github.com/mohamedfrindi/Mouse.js#readme"
 }
