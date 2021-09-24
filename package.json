@@ -2,7 +2,7 @@
   "name": "mousejs",
   "version": "1.0.0",
   "description": "Mouse.Js is a javascript library, which changes the shape of the mouse into various shapes with beautiful effects",
-  "main": "index.js",
+  "main": "dist/js/mouse.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
