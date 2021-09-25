@@ -262,6 +262,3 @@ function Mouse (parametars) {
     }
 
 }
-
-
-export {Mouse}
