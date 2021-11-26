@@ -48,7 +48,6 @@ export default [
     }
 ];
 
-
 // run zip func
 class TestMe {
 
