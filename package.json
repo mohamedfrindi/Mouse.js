@@ -2,24 +2,21 @@
   "name": "moussejs",
   "version": "1.0.3",
   "description": "Mouse.Js is a javascript library, which changes the shape of the mouse into various shapes with beautiful effects",
-  "main": "dist/js/mouse.js",
+  "main": "src/entry.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c rollup.config.js"
   },
   "author": "Mohamed Frindi",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.7.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-sass": "^5.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-zip": "^5.1.0",
-    "node-sass": "^6.0.1"
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "node-sass": "^6.0.1",
+    "rollup": "^2.60.1",
+    "rollup-plugin-generate-html-template": "^1.7.0",
+    "rollup-plugin-postcss": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "zip-a-folder": "^1.1.0"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mohamedfrindi/Mouse.js.git"

@@ -1,4 +1,4 @@
-function Mouse (parametars) {
+export default function Mouse (parametars) {
 
     this.default = {
         mouse : 'cirle',
@@ -107,7 +107,6 @@ function Mouse (parametars) {
 
     this.mouseElHover = function () {
         let mouseEl = document.querySelector('.mouse');
-        creatMouse = mouseEl
 
         // mouse element hover
         let element = document.querySelectorAll(this.options.el);
@@ -125,7 +124,7 @@ function Mouse (parametars) {
 
                         el.addEventListener('mousemove' , function (e) {
                             if (e.target == el) {
-                                creatMouse.classList.add('mouse-hover')
+                                mouseEl.classList.add('mouse-hover')
                             }
                         })
             
@@ -133,17 +132,17 @@ function Mouse (parametars) {
 
                             if (par == 'border') {
                                 e.target.classList.add('mouse-border')
-                                creatMouse.remove()
+                                mouseEl.remove()
                             }else if (par == 'background') {
                                 e.target.classList.add('mouse-bg')
-                                creatMouse.remove()
+                                mouseEl.remove()
                             }
 
                         })
 
                         el.addEventListener('mouseout' , function (e) {
-                            document.body.appendChild(creatMouse)
-                            creatMouse.classList.remove('mouse-hover')
+                            document.body.appendChild(mouseEl)
+                            mouseEl.classList.remove('mouse-hover')
             
                             // remove all style for elment target
                             e.target.style = 'none'
@@ -159,7 +158,7 @@ function Mouse (parametars) {
 
                         el.addEventListener('mousemove' , function (e) {
                             if (e.target == el) {
-                                creatMouse.classList.remove('mouse-hover')
+                                mouseEl.classList.remove('mouse-hover')
                             }
                         })
                     }
@@ -216,7 +215,6 @@ function Mouse (parametars) {
     this.mouseFilterColor = function () {
 
         let mouseEl = document.querySelector('.mouse');
-        creatMouse = mouseEl
 
         // curuser changed color daynamic
         let clr = this.options.clrChanged;
@@ -237,7 +235,7 @@ function Mouse (parametars) {
                 if (par == false) {
                     clearInterval(intervalID)
                     star = 0;
-                    creatMouse.style.filter = `none`
+                    mouseEl.style.filter = `none`
                 }
 
                 if (par == true) {
@@ -245,7 +243,7 @@ function Mouse (parametars) {
                     if (star >= 360) {
                         star = 0
                     }else{
-                        creatMouse.style.filter = `hue-rotate(${star}deg)`
+                        mouseEl.style.filter = `hue-rotate(${star}deg)`
                     }
                 }
             }
@@ -260,5 +258,4 @@ function Mouse (parametars) {
         }
 
     }
-
 }
