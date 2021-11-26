@@ -5,12 +5,26 @@ Mouse.Js is a javascript library, which changes the shape of the mouse into vari
 
 ## Installation
 
-##### Put the CSS file to your <code>head</code> tag:
-````html
-<link rel="stylesheet" href="dist/css/mouse.css" />
-<!-- or -->
-<link rel="stylesheet" href="dist/css/mouse-min.css" />
+<br>
+<br>
+
+
+### npm
 ````
+npm install moussejs --save
+````
+````javascript
+import { Mouse } from "moussejs";
+````
+
+<br>
+
+#### CDN
+````html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/mouse-min.js"></script>
+````
+
+<br>
 
 ##### Put the JS file at the end of the <code>body</code> tag:
 ````html
@@ -19,18 +33,6 @@ Mouse.Js is a javascript library, which changes the shape of the mouse into vari
 <script type="text/javascript" src="dist/js/mouse-min.js"></script>
 ````
 
-#### CDN
-````html
-<!-- css -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/css/mouse.css" />
-<!-- js -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mohamedfrindi/Mouse.js/dist/js/mouse.js"></script>
-````
-
-#### install with npm
-````
-npm i moussejs
-````
 
 
 ##### To run Mouse.Js just add the following code in your <code>script</code>:
@@ -38,6 +40,9 @@ npm i moussejs
 let mouse = new Mouse()
 mouse.mouse()
 ````
+
+<br>
+<br>
 
 ## Options
 ````javascript
