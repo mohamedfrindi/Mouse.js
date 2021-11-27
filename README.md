@@ -15,6 +15,8 @@ npm install moussejs --save
 ````
 ````javascript
 import { Mouse } from "moussejs";
+or 
+const { Mouse } = require('moussejs');
 ````
 
 <br>
