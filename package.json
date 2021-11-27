@@ -1,6 +1,6 @@
 {
   "name": "moussejs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Mouse.Js is a javascript library, which changes the shape of the mouse into various shapes with beautiful effects",
   "main": "entry.js",
   "scripts": {
