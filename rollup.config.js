@@ -6,6 +6,9 @@ import { zip } from 'zip-a-folder';
 
 
 export default [
+
+    // dist file
+
     {
         input: 'src/index.js',
 
@@ -30,6 +33,25 @@ export default [
             }
         ],
     },
+
+    // entry import
+    {
+        input: 'src/entry.js',
+
+        output: [
+            {
+                file: 'entry.js',
+                format: 'cjs',
+            },
+        ],
+
+        plugins : [
+            nodeResolve(),
+            postcss(),
+        ],
+    },
+
+    // template 
     {
         input : 'demo/index.js',
 
